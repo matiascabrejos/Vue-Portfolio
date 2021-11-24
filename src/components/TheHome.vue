@@ -42,24 +42,44 @@
         />
       </div>
       <div class="mt-16">
-        <h1 class="text-lg text-center font-semibold">Cassie</h1>
+        <h1 class="text-lg text-center font-semibold">Matías Cabrejos</h1>
+        <h1 class="text-center font-semibold text-gray-600">Front-End Developer</h1>
       </div>
-              <div class="flex text-grey-dark items-center justify-center text-gray-600">
+      <div
+        class="flex text-grey-dark items-center justify-center text-gray-600"
+      >
+        <svg
+          class="h-5 w-5 text-grey mr-1"
+          fill="currentColor"
+          xmlns="http://www.w3.org/2000/svg"
+          viewBox="0 0 24 24"
+          width="24"
+          height="24"
+        >
+          <path
+            class="heroicon-ui"
+            d="M5.64 16.36a9 9 0 1 1 12.72 0l-5.65 5.66a1 1 0 0 1-1.42 0l-5.65-5.66zm11.31-1.41a7 7 0 1 0-9.9 0L12 19.9l4.95-4.95zM12 14a4 4 0 1 1 0-8 4 4 0 0 1 0 8zm0-2a2 2 0 1 0 0-4 2 2 0 0 0 0 4z"
+          />
+        </svg>
+        Buenos Aires, Argentina
+      </div>
+      <div class="flex justify-center">
+        <a class="mt-3 text-indigo-500 inline-flex items-center"
+          >About Me
           <svg
-            class="h-5 w-5 text-grey mr-1"
-            fill="currentColor"
-            xmlns="http://www.w3.org/2000/svg"
+            fill="none"
+            stroke="currentColor"
+            stroke-linecap="round"
+            stroke-linejoin="round"
+            stroke-width="2"
+            class="w-4 h-4 animate-pulse ml-2"
             viewBox="0 0 24 24"
-            width="24"
-            height="24"
           >
-            <path
-              class="heroicon-ui"
-              d="M5.64 16.36a9 9 0 1 1 12.72 0l-5.65 5.66a1 1 0 0 1-1.42 0l-5.65-5.66zm11.31-1.41a7 7 0 1 0-9.9 0L12 19.9l4.95-4.95zM12 14a4 4 0 1 1 0-8 4 4 0 0 1 0 8zm0-2a2 2 0 1 0 0-4 2 2 0 0 0 0 4z"
-            />
+            <path d="M5 12h14M12 5l7 7-7 7"></path>
           </svg>
-          Buenos Aires, Argentina
-        </div>
+        </a>
+      </div>
+
       <div class="mt-6 pt-3 flex flex-wrap mx-6 border-t">
         <div
           class="
