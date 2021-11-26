@@ -1,6 +1,114 @@
 <template>
   <div>
     <h1 class="text-focus-in">Front-End Developer</h1>
+    <div class="flex items-center justify-center">
+      <!-- <div class="inline-grid lg:grid-cols-4 md:grid-cols-2 gap-10 py-6">
+        <div class="flex items-center">
+          <img
+            src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/html5/html5-original.svg"
+            class="animate-pulse"
+          />
+          <p class="pl-4">HTML</p>
+        </div>
+        <div class="flex items-center">
+          <img
+            src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/css3/css3-original.svg"
+            class="animate-pulse"
+          />
+          <p class="pl-4">CSS</p>
+        </div>
+        <div class="flex items-center">
+          <img
+            src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/sass/sass-original.svg"
+            class="animate-pulse"
+          />
+          <p class="pl-4">SASS</p>
+        </div>
+        <div class="flex items-center">
+          <img
+            src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/tailwindcss/tailwindcss-plain.svg"
+            class="animate-pulse"
+          />
+          <p class="pl-4">TAILWIND CSS</p>
+        </div>
+        <div class="flex items-center">
+          <img
+            src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/javascript/javascript-original.svg"
+            class="animate-pulse"
+          />
+          <p class="pl-4">JAVASCRIPT</p>
+        </div>
+        <div class="flex items-center">
+          <img
+            src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/vuejs/vuejs-original.svg"
+            class="animate-pulse"
+          />
+          <p class="pl-4">VUEJS</p>
+        </div>
+        <div class="flex items-center">
+          <img
+            src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/nuxtjs/nuxtjs-original.svg"
+            class="animate-pulse"
+          />
+          <p class="pl-4">NUXTJS</p>
+        </div>
+        <div class="flex items-center">
+          <img
+            src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/git/git-original.svg"
+            class="animate-pulse"
+          />
+          <p class="pl-4">GIT</p>
+        </div>
+      </div> -->
+      <div class="inline-grid lg:grid-cols-2 md:grid-cols-2 gap-10 py-6">
+        <div class="flex items-center">
+          <img
+            src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/html5/html5-original.svg"
+            class="animate-pulse"
+          />
+          <p class="pl-4">HTML</p>
+        </div>
+        <div class="flex items-center">
+          <img
+            src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/css3/css3-original.svg"
+            class="animate-pulse"
+          />
+          <p class="pl-4">CSS</p>
+        </div>
+      </div>
+    </div>
+    <div class="flex items-center justify-center">
+      <div class="inline-grid lg:grid-cols-4 md:grid-cols-2 gap-10 py-6">
+        <div class="flex items-center">
+          <img
+            src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/html5/html5-original.svg"
+            class="animate-pulse"
+          />
+          <p class="pl-4">HTML</p>
+        </div>
+        <div class="flex items-center">
+          <img
+            src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/css3/css3-original.svg"
+            class="animate-pulse"
+          />
+          <p class="pl-4">CSS</p>
+        </div>
+        <div class="flex items-center">
+          <img
+            src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/css3/css3-original.svg"
+            class="animate-pulse"
+          />
+          <p class="pl-4">CSS</p>
+        </div>
+        <div class="flex items-center">
+          <img
+            src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/css3/css3-original.svg"
+            class="animate-pulse"
+          />
+          <p class="pl-4">CSS</p>
+        </div>
+      </div>
+    </div>
   </div>
 </template>
 
@@ -25,5 +133,10 @@
     filter: blur(0);
     opacity: 1;
   }
+}
+
+img {
+  width: 50px;
+  height: 50px;
 }
 </style>
