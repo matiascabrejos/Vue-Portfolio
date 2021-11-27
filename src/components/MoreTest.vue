@@ -78,7 +78,7 @@
       </div>
     </div>
     <div class="flex items-center justify-center">
-      <div class="inline-grid lg:grid-cols-4 md:grid-cols-2 gap-10 py-6">
+      <div class="inline-grid lg:grid-cols-4 md:grid-cols-4 gap-10 py-6">
         <div class="flex items-center">
           <img
             src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/html5/html5-original.svg"
@@ -109,6 +109,24 @@
         </div>
       </div>
     </div>
+     <div class="flex items-center justify-center">
+      <div class="inline-grid lg:grid-cols-2 md:grid-cols-2 gap-10 py-6">
+        <div class="flex items-center">
+          <img
+            src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/html5/html5-original.svg"
+            class="animate-pulse"
+          />
+          <p class="pl-4">HTML</p>
+        </div>
+        <div class="flex items-center">
+          <img
+            src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/css3/css3-original.svg"
+            class="animate-pulse"
+          />
+          <p class="pl-4">CSS</p>
+        </div>
+      </div>
+     </div>
   </div>
 </template>
 
