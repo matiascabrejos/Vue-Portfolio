@@ -14,10 +14,11 @@ const router = createRouter({
     { path: "/testing", component: Testing },
     { path: "/", component: TheHome },
     { path: "/test", component: Test },
-    {path: '/moretest', component: MoreTest}
+    { path: "/moretest", component: MoreTest },
   ],
   linkActiveClass: "active",
 });
+
 
 const app = createApp(App);
 
