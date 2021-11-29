@@ -7,6 +7,7 @@ import Testing from "./components/Testing.vue";
 import TheHome from "./components/TheHome.vue";
 import Test from "./components/Test.vue";
 import MoreTest from "./components/MoreTest.vue";
+import TheNavbar from "./components/TheNavbar.vue";
 
 const router = createRouter({
   history: createWebHistory(),
@@ -19,8 +20,9 @@ const router = createRouter({
   linkActiveClass: "active",
 });
 
-
 const app = createApp(App);
+
+app.component("the-navbar", TheNavbar);
 
 app.use(router);
 app.mount("#app");

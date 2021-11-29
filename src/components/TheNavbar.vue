@@ -9,9 +9,9 @@
           </div>
       
           <div class="navbar hidden md:block">
-            <router-link class="nav-link hover:text-primary" to="portfolio">Portfolio</router-link>
-            <router-link class="nav-link hover:text-primary" to="blog">Blog</router-link>
-            <router-link class="nav-link hover:text-primary" to="about">About</router-link>
+            <router-link class="nav-link hover:text-primary" to="test">Portfolio</router-link>
+            <router-link class="nav-link hover:text-primary" to="testing">Blog</router-link>
+            <router-link class="nav-link hover:text-primary" to="moretest">About</router-link>
           </div>
 
           <div class="ml-3 flex md:hidden">
@@ -60,14 +60,14 @@
 </script>
 
 <style>
-    /* .mobile-link{
+    .mobile-link{
       @apply block px-3 py-2 text-lg text-gray-900 rounded-md text-white font-medium text-center;
     }
 
     .nav-link{
       @apply ml-12 font-medium text-lg text-gray-700;
-    } */
-    /* .nuxt-link-exact-active {
-      @apply text-primary;
-    } */
+    }
+    .nuxt-link-exact-active {
+      @apply text-red-600;
+    }
 </style>
