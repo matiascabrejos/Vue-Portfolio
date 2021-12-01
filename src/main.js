@@ -7,7 +7,7 @@ import Testing from "./components/Testing.vue";
 import TheHome from "./components/TheHome.vue";
 import Test from "./components/Test.vue";
 import MoreTest from "./components/MoreTest.vue";
-import TheNavbar from "./components/TheNavbar.vue";
+// import TheNavbar from "./components/TheNavbar.vue";
 import TheHero from "./components/TheHero.vue";
 
 const router = createRouter({
@@ -24,7 +24,7 @@ const router = createRouter({
 
 const app = createApp(App);
 
-app.component("the-navbar", TheNavbar);
+// app.component("the-navbar", TheNavbar);
 
 app.use(router);
 app.mount("#app");
