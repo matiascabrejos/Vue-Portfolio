@@ -19,7 +19,7 @@
       >
         a Front-End Developer
       </h3>
-      <p class="text-lg lg:text-xl font-semibold">Passionate about coding</p>
+      <p class="text-lg lg:text-xl font-semibold">Fill text</p>
 
       <div class="mt-5">
         <more-test></more-test>
