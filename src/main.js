@@ -9,6 +9,7 @@ import Test from "./components/Test.vue";
 import MoreTest from "./components/MoreTest.vue";
 // import TheNavbar from "./components/TheNavbar.vue";
 import TheHero from "./components/TheHero.vue";
+import Back from "./components/Back.vue";
 
 const router = createRouter({
   history: createWebHistory(),
@@ -18,6 +19,7 @@ const router = createRouter({
     { path: "/test", component: Test },
     { path: "/moretest", component: MoreTest },
     { path: "/hero", component: TheHero },
+    { path: "/back", component: Back },
   ],
   linkActiveClass: "active",
 });
