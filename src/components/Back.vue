@@ -1,88 +1,115 @@
 <template>
-  <div class="hero">
-    <div class="hero__title">HI</div>
-    <div class="cube"></div>
-    <div class="cube"></div>
-    <div class="cube"></div>
-    <div class="cube"></div>
-    <div class="cube"></div>
-    <div class="cube"></div>
+  <div class="h-screen">
+    <div class="container">
+      <div class="sky">
+        <div class="text">#CODEVEMBER</div>
+        <div class="stars"></div>
+        <div class="stars1"></div>
+        <div class="stars2"></div>
+      </div>
+    </div>
   </div>
 </template>
 
-<style scoped>
-.hero {
-  background-color: #0040c1;
-  position: relative;
-  height: 100vh;
-  overflow: hidden;
-  font-family: "Montserrat", sans-serif;
-}
+<style lang="sass" scoped>
+$starFieldWidth: 2560
+$starFieldHeight: 2560
+$starStartOffset: 600px
 
-.hero__title {
-  color: #fff;
-  position: absolute;
-  top: 50%;
-  left: 50%;
-  transform: translate(-50%, -50%);
-  font-size: 50px;
-  z-index: 1;
-}
+$starOneScrollDuration: 100s
+$starTwoScrollDuration: 125s
+$starThreeScrollDuration: 175s
+$numStarOneStars: 1700
+$numStarTwoStars: 700
+$numStarThreeStars: 200
+$numShootingStars: 10
+$width: 100%
 
-.cube {
-  position: absolute;
-  top: 80vh;
-  left: 45vw;
-  width: 10px;
-  height: 10px;
-  border: solid 1px darken(#0040c1, 8%);
-  transform-origin: top left;
-  transform: scale(0) rotate(0deg) translate(-50%, -50%);
-  animation: cube 12s ease-in forwards infinite;
-}
+html
+  height: 100%
+  body
+    width: 100%
+    height: 100%
+    margin: 0
+.container
+  display: block
+  position: relative
+  width: 100%
+  height: 100%
+  background: linear-gradient(to bottom, #020107 0%, #201b46 100%)
+  .text
+    color: #FFF
+    position: absolute
+    top: 50%
+    right: 50%
+    margin: -10px -75px 0 0
+    font-size: 20px
+    font-family: sans-serif
+    font-weight: bold
 
-.cube :nth-child(2n) {
-  border-color: lighten(#0040c1, 10%);
-}
+@function create-stars($n)
 
-.cube :nth-child(2) {
-  animation-delay: 2s;
-  left: 25vw;
-  top: 40vh;
-}
+  $stars: "#{random($starFieldWidth)}px #{random($starFieldHeight)}px #FFF"
 
-.cube :nth-child(3) {
-  animation-delay: 4s;
-  left: 75vw;
-  top: 50vh;
-}
+  @for $i from 2 through $n
+    $stars: "#{$stars} , #{random($starFieldWidth)}px #{random($starFieldHeight)}px #FFF"
 
-.cube :nth-child(4) {
-  animation-delay: 6s;
-  left: 90vw;
-  top: 10vh;
-}
+  @return unquote($stars)
 
-.cube :nth-child(5) {
-  animation-delay: 8s;
-  left: 10vw;
-  top: 85vh;
-}
+@mixin star-template($numStars, $starSize, $scrollSpeed)
+  z-index: 10
+  width: $starSize
+  height: $starSize
+  border-radius: 50%
+  background: transparent
+  box-shadow: create-stars($numStars)
+  animation: animStar $scrollSpeed linear infinite
+  &:after
+    content: " "
+    top: -$starStartOffset
+    width: $starSize
+    height: $starSize
+    border-radius: 50%
+    position: absolute
+    backgroud: transparent
+    box-shadow: create-stars($numStars)
 
-.cube :nth-child(6) {
-  animation-delay: 10s;
-  left: 50vw;
-  top: 10vh;
-}
 
-@keyframes cube {
-  from {
-    transform: scale(0) rotate(0deg) translate(-50%, -50%);
-    opacity: 1;
-  }
-  to {
-    transform: scale(20) rotate(960deg) translate(-50%, -50%);
-    opacity: 0;
-  }
-}
+@mixin shooting-star-template($numStars, $starSize, $speed)
+  z-index: 10
+  width: $starSize
+  height: $starSize + 80px
+  border-top-left-radius: 50%
+  border-top-right-radius: 50%
+  position: absolute
+  bottom: 0
+  right: 0
+  background: linear-gradient(to top, rgba(255,255,255,0), rgba(255,255,255,1))
+  animation: animShootingStar $speed linear infinite
+
+.stars
+  @include star-template($numStarOneStars, 1px, $starOneScrollDuration)
+.stars1
+  @include star-template($numStarTwoStars, 2px, $starTwoScrollDuration)
+.stars2
+  @include star-template($numStarThreeStars, 3px, $starThreeScrollDuration)
+.shooting-stars
+  @include shooting-star-template($numShootingStars, 5px, 10s)
+
+@keyframes animStar
+  from
+    transform: translateY(0px)
+  to
+    transform: translateY(-#{$starFieldHeight}px) translateX(-#{$starFieldWidth}px)
+
+
+@keyframes animShootingStar
+  from
+    transform: translateY(0px) translateX(0px) rotate(-45deg)
+    opacity: 1
+    height: 5px
+  to
+    transform: translateY(-#{$starFieldHeight}px) translateX(-#{$starFieldWidth}px) rotate(-45deg)
+    opacity: 1
+    height: 800px
 </style>
