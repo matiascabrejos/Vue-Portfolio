@@ -97,7 +97,7 @@ export default {
 };
 </script>
 
-<style>
+<style scoped>
 .mobile-link {
   @apply block px-3 py-2 text-lg rounded-md font-medium text-center;
   color: #57586e;
