@@ -61,19 +61,13 @@
     </nav>
     <div :class="[isOpen ? '' : 'hidden', 'md:hidden']">
       <div class="px-2 pt-2 pb-3 sm:px-3 bg-primary">
-        <router-link
-          to="portfolio"
-          class="mobile-link focus:outline-none"
+        <router-link to="portfolio" class="mobile-link focus:outline-none"
           >Projects
         </router-link>
-        <router-link
-          to="blog"
-          class="mt-1 mobile-link focus:outline-none"
+        <router-link to="blog" class="mt-1 mobile-link focus:outline-none"
           >Blog
         </router-link>
-        <router-link
-          to="about"
-          class="mt-1 mobile-link focus:outline-none"
+        <router-link to="about" class="mt-1 mobile-link focus:outline-none"
           >About
         </router-link>
       </div>

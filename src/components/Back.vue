@@ -1,18 +1,18 @@
 <template>
   <div class="h-screen">
-    <projects-grid></projects-grid>
+    <wrapper-grid></wrapper-grid>
   </div>
 </template>
 
 <style scoped>
-/* div {
+div {
   background-color: #0e1118;
-} */
+}
 </style>
 
 <script>
-import ProjectsGrid from "./ProjectsGrid.vue";
+import WrapperGrid from "./WrapperGrid.vue";
 export default {
-  components: { ProjectsGrid },
+  components: { WrapperGrid },
 };
 </script>

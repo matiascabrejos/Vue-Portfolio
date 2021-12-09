@@ -1,17 +1,8 @@
 <template>
   <div class="wrapper-small md:px-10">
-    <div class="mt-16">
-      <div
-        class="
-          flex
-          justify-center
-          items-center
-          text-base
-          font-semibold
-          text-gray-600
-        "
-      >
-        <h4 class="text-center">Featured Projects</h4>
+    <div class="pt-16">
+      <div class="flex justify-center items-center text-base font-semibold">
+        <h4 class="text-center text-white">Featured Projects</h4>
       </div>
 
       <div>
