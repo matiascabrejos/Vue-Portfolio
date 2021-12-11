@@ -1,6 +1,7 @@
 <template>
   <div class="h-screen">
     <wrapper-grid></wrapper-grid>
+    <another-grid></another-grid>
   </div>
 </template>
 
@@ -11,8 +12,9 @@ div {
 </style>
 
 <script>
+import AnotherGrid from './AnotherGrid.vue';
 import WrapperGrid from "./WrapperGrid.vue";
 export default {
-  components: { WrapperGrid },
+  components: { WrapperGrid, AnotherGrid },
 };
 </script>

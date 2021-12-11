@@ -11,6 +11,7 @@ import MoreTest from "./components/MoreTest.vue";
 import TheHero from "./components/TheHero.vue";
 import Back from "./components/Back.vue";
 import WrapperGrid from "./components/WrapperGrid.vue";
+import AnotherGrid from "./components//AnotherGrid.vue";
 
 const router = createRouter({
   history: createWebHistory(),
@@ -22,6 +23,7 @@ const router = createRouter({
     { path: "/hero", component: TheHero },
     { path: "/back", component: Back },
     { path: "/wrap", component: WrapperGrid },
+    { path: "/another", component: AnotherGrid },
   ],
   linkActiveClass: "active",
 });

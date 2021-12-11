@@ -82,6 +82,7 @@
             <button
               class="rounded py-2 px-4 text-white font-semibold text-sm btn-one"
             >
+              <i class="fas fa-laptop"></i>
               See Project
             </button>
             <button
@@ -96,6 +97,7 @@
                 btn-two
               "
             >
+              <i class="devicon-github-original"></i>
               Source Code
             </button>
           </div>
