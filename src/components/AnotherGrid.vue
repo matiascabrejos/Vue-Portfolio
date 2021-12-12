@@ -29,9 +29,6 @@
                 Travelify
               </h2>
             </router-link>
-            <p class="font-semibold text-white dark:text-gray-300 text-sm">
-              19 DE NOV
-            </p>
             <div class="flex flex-col justify-between max-w-lg mx-auto"></div>
             <span
               class="
@@ -55,7 +52,7 @@
               not.
             </p>
             <div>
-              <div class="md:px-5 lg:px-0 pt-7 pb-6">
+              <div class="md:px-5 lg:px-0 pt-7 pb-6 flex justify-center lg:justify-start md:justify-start">
                 <button
                   class="
                     rounded
@@ -67,7 +64,7 @@
                     btn-one
                   "
                 >
-                  <i class="fas fa-laptop"></i>
+                  <i class="fa fa-laptop"></i>
                   See Project
                 </button>
                 <button
@@ -82,7 +79,7 @@
                     btn-two
                   "
                 >
-                  <i class="devicon-github-original"></i>
+                  <i class="fa fa-github"></i>
                   Source Code
                 </button>
               </div>
@@ -122,5 +119,10 @@
 
 span {
   background: #17b5cb;
+}
+
+i {
+  font-size: 16px;
+  margin-right: 4px;
 }
 </style>

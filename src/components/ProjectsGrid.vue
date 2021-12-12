@@ -78,11 +78,10 @@
           </p>
         </div>
         <div>
-          <div class="md:px-5 lg:px-0 py-3">
+          <div class="md:px-5 lg:px-0 py-3 flex justify-center lg:justify-start md:justify-start">
             <button
               class="rounded py-2 px-4 text-white font-semibold text-sm btn-one"
             >
-              <i class="fas fa-laptop"></i>
               See Project
             </button>
             <button
@@ -97,7 +96,6 @@
                 btn-two
               "
             >
-              <i class="devicon-github-original"></i>
               Source Code
             </button>
           </div>

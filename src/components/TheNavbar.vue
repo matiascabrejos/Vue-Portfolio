@@ -4,7 +4,7 @@
       <div class="px-10 flex justify-between items-center">
         <div class="logo">
           <router-link to="/">
-            <h1 class="text-2xl font-semibold text-gray-700">
+            <h1 class="text-2xl font-semibold text-white">
               <span class="text-primary font-bold">mono</span>tone.
             </h1>
           </router-link>
@@ -99,17 +99,17 @@ export default {
 
 .nav-link {
   @apply ml-12 font-medium text-lg;
-  color: #57586e;
+  color: white;
 }
 .nuxt-link-exact-active {
   @apply text-red-600;
 }
 nav {
   background-color: #0e1118;
-  border-bottom: 3px solid hsla(0, 0%, 94.5%, 0.2);
+  border-bottom: 3px solid #17b5cb;
 }
 
 svg {
-  color: #57586e;
+  color: white;
 }
 </style>
