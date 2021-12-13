@@ -17,8 +17,8 @@
           <router-link class="nav-link hover:text-primary" to="testing"
             >Blog</router-link
           >
-          <router-link class="nav-link hover:text-primary" to="moretest"
-            >About</router-link
+          <router-link class="nav-link hover:text-primary" to="back"
+            >Back</router-link
           >
         </div>
 
@@ -111,5 +111,13 @@ nav {
 
 svg {
   color: white;
+}
+
+a.active {
+  color: #17b5cb;
+}
+
+a:hover {
+  color: #17b5cb;
 }
 </style>
