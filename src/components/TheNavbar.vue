@@ -5,7 +5,7 @@
         <div class="logo">
           <router-link to="/">
             <h1 class="text-2xl font-semibold text-white">
-              <span class="text-primary font-bold">mono</span>tone.
+              <span class="text-primary font-bold">mAt</span>deV.
             </h1>
           </router-link>
         </div>

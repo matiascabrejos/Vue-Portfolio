@@ -11,7 +11,7 @@
         dark:text-gray-300
       "
     >
-      <h2 class="text-center">Featured blogs</h2>
+      <h2 class="text-center">Featured Projects</h2>
       <IconDoubleDown class="h-4 w-4" />
     </div>
 
@@ -52,7 +52,18 @@
               not.
             </p>
             <div>
-              <div class="md:px-5 lg:px-0 pt-7 pb-6 flex justify-center lg:justify-start md:justify-start">
+              <div
+                class="
+                  md:px-5
+                  lg:px-0
+                  pt-7
+                  pb-6
+                  flex
+                  justify-center
+                  lg:justify-start
+                  md:justify-start
+                "
+              >
                 <button
                   class="
                     rounded
@@ -88,10 +99,90 @@
         </div>
       </div>
     </div>
+    <div
+      class="
+        flex
+        justify-center
+        items-center
+        text-base
+        font-semibold
+        text-white
+        dark:text-gray-300
+      "
+    >
+      <h2 class="text-center">Featured Projects</h2>
+      <IconDoubleDown class="h-4 w-4" />
+    </div>
+
+    <div class="wrapper-small my-5">
+      <div class="project-card md:flex mt-10">
+        <div class="img max-w-lg md:max-w-sm mx-auto m-2">
+          <router-link to="/">
+            <img src="assets/n5gi1pq.png" class="rounded-xl" alt="" />
+          </router-link>
+        </div>
+        <div class="flex flex-col justify-between max-w-lg mx-auto">
+          <div class="txt md:px-5 lg:px-0">
+            <router-link to="/">
+              <h2 class="text-grid">Travelify</h2>
+            </router-link>
+            <div class="flex flex-col justify-between max-w-lg mx-auto"></div>
+            <span class="span-grid"> #Python </span>
+            <p class="text-base text-white dark:text-gray-200 my-1">
+              By reading this article, I would suppose that you know enough to
+              decide whether you will use GraphQl in your next Django project or
+              not.
+            </p>
+            <div>
+              <div
+                class="
+                  md:px-5
+                  lg:px-0
+                  pt-7
+                  pb-6
+                  flex
+                  justify-center
+                  lg:justify-start
+                  md:justify-start
+                "
+              >
+                <button
+                  class="
+                    btn-grid
+                    btn-one
+                    text-white
+                  "
+                >
+                  <i class="fa fa-laptop"></i>
+                  See Project
+                </button>
+                <button class="btn-grid btn-two ml-6">
+                  <i class="fa fa-github"></i>
+                  Source Code
+                </button>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
   </div>
 </template>
 
 <style scoped>
+.span-grid {
+  @apply font-semibold text-white bg-opacity-25 text-sm rounded mr-1 px-1;
+  background: #17b5cb;
+}
+
+.text-grid {
+  @apply text-xl font-semibold text-white;
+}
+
+.btn-grid {
+  @apply rounded py-2 px-4 font-semibold text-sm;
+}
+
 .wrapper {
   @apply max-w-screen-xl mx-auto;
 }
